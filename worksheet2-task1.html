@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Q1</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-red.min.css" />
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+</head>
+<body>
+	<h1>Enrol a student </h1>
+	<form action="#">
+		Full Name <br>
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="text"  id="firstName">
+				<label class="mdl-textfield__label" for="firstName">First Name</label>
+			</div>
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="text"  id="lastName" >
+				<label class="mdl-textfield__label" for="lastName">Last Name</label>
+			</div> <br>
+
+		DOB <br>
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			  <input class="mdl-textfield__input" type="date" id="dob">
+				<label class="mdl-textfield__label" for="dob">Date of Birth</label>
+			</div>
+			<br><br>
+
+		Gender <br>
+			<input type="radio" name="gender" value="male">Male<br>
+			<input type="radio" name="gender" value="female"> Female<br>
+			<input type="radio" name="gender" value="other"> other<br><br>
+
+		Country <br>
+		<select id="country" >
+			<option value="" disable selected hidden>Select </option>
+			<option value="australia">Australia</option>
+		  <option value="newZealand">New Zealand</option>
+		  <option value="malaysia">Malaysia</option>
+		  <option value="indonesia">Indonesia</option>
+		</select><br><br>
+
+
+	 Address <br>
+	 <div class="mdl-textfield mdl-js-textfield">
+		 <textarea class="mdl-textfield__input" type="text" rows= "4" id="address" ></textarea>
+		 <label class="mdl-textfield__label" for="address">Address</label>
+	</div> <br>
+	 Email <br>
+	 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	 	<input class="mdl-textfield__input" type="text" id="email">
+	 	<label class="mdl-textfield__label" for="email">Your email</label>
+	</div><br>
+ </form>
+ <button type="submit" onclick="enrolStudent()"class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+	 submit
+ </button><br>
+
+<div id="resultArea"><h2>Results</h2></div>
+
+<script src="worksheet1-task4.js"></script>
+
+</body>
+</html>
