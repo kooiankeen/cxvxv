@@ -78,5 +78,8 @@ let rowHTML=""
 rowHTML+='<tr><th>'+'Summary'+'</th><td>'+weatherSummary+'</td></tr>';
 rowHTML+='<tr><th>'+'Current Temperature'+'</th><td>'+temperature+'℃'+'</td></tr>';
 rowHTML+='<tr><th>'+'Pressure'+'</th><td>'+pressure+'Pa'+'</td></tr>';
+rowHTML+='<tr><th>'+'Humidity'+'</th><td>'+humidity+'</td></tr>';
+rowHTML+='<tr><th>'+'Dew Point'+'</th><td>'+dewPoint+'</td></tr>';
+rowHTML+='<tr><th>'+'UV Index'+'</th><td>'+uvIndex+'</td></tr>';
 outputTableRef.innerHTML=rowHTML;
 }
