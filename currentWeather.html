@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset='utf-8' />
+  <title>Current weather</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css' rel='stylesheet'>
+  <link rel="stylesheet" href="currentWeather.css">
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
+  </head>
+
+
+    <!-- TODO -->
+    <!-- Link the relavent files from Mapbox API here to initialize the map. Refer the example  linked in the prac-->
+  <body>
+    <div  id='titleArea'><h2>Current weather at your location</h2></div>
+    <!-- Use this div for the map-->
+    <div id='mapArea' class='page-block'></div>
+
+    <div id='contentArea'>
+      <!-- two buttons-->
+      <div  id='buttonArea'>
+        <span>
+        <button type="button" name="button" onclick=getCurrentLocation()>Get Current Location</button>
+        <button type="button" name="button" onclick=functionNameButton2()>Get current Weather</button>
+        </span>
+      </div>
+      <div id='outputArea'>
+        <!-- table to display weather-->
+        <table id='table-weather'>
+          <!-- sample rows-->
+          <tr><th>Summary</th><td>rainy</td></tr>
+          <tr><th>Current temperature</th><td>35.1 &#8451;</td></tr>
+          <tr><th>Pressure</th><td>1015.13 Pa</td></tr>
+        </table>
+      </div>
+
+
+  </body>
+  <script type="text/javascript" src='currentWeather.js'>
+
+  </script>
+</html>
